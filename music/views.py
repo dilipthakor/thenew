@@ -8,3 +8,8 @@ from django.shortcuts import render
 
 def index(request):
     return HttpResponse("<h1>Dilip Thakor </h1>")
+
+def detail(request, album_id):
+    return HttpResponse("<h2>Detail for album id "+str(album_id)+"</h2>")
+
+
